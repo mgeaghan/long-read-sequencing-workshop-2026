@@ -2,8 +2,11 @@
 
 This directory contains all of the final scripts we will build during the workshop. The scripts make up a complete workflow from FASTQ quality control, through genome assembly, and to antimicrobial resistance gene detection and plasmid analysis. The scripts are:
 
-1. `01.run_qc.sh`: Initial sequencing run QC with pycoQC.
-2. `02.fastq_qc.sh`: Initial FASTQ quality control with FASTQC, NanoPlot, and MultiQC.
+0. `00.multiqc.sh`: MultiQC script for compiling all outputs into one report.
+1. Initial sequencing run QC using a sequencing summary file as input:
+    1. `01.a.pycoqc.sh`: pycoQC
+    2. `01.b.nanoplot.sh`: NanoPlot
+2. `02.fastq_qc.sh`: Initial FASTQ quality control with FASTQC.
 3. `03.trim_filter.sh`: Read trimming and filtering to remove adapters and low-quality bases/reads using fastplong.
 4. `04.contamination.sh`: Contamination assessment with Kraken2.
     1. `04b.contamination_removal.sh`: Host read removal by aligning to human genome and removing aligned reads.
