@@ -20,3 +20,26 @@ This directory contains all of the final scripts we will build during the worksh
 10. `10.amr_gene_detection.sh`: Detect antimicrobial resistance (AMR) and virulence genes with AMRFinderPlus and ABRicate.
 11. `11.plasmid_comparison.sh`: Perform a multiple sequence alignment on the plasmid sequences to detect similarities.
 12. `12.strain_id.sh`: Identify bacterial strains with cgMLST.
+
+## Container images
+
+The following container images are being used for each tool:
+
+| Tool | Image URL |
+| ---- | --------- |
+| MultiQC | docker://quay.io/biocontainers/multiqc:1.35--pyhdfd78af_1 |
+| NanoPlot | docker://quay.io/biocontainers/nanoplot:1.46.2--pyhdfd78af_1 |
+| FastQC | docker://quay.io/biocontainers/fastqc:0.11.9--0 |
+| fastplong | docker://quay.io/biocontainers/fastplong:0.4.1--h224cc79_0 |
+| Kraken2 | docker://quay.io/biocontainers/kraken2:2.17.1--pl5321h077b44d_0 |
+| Flye | docker://quay.io/biocontainers/flye:2.9.6--py313h7fbb527_1 |
+| Plassembler | docker://quay.io/biocontainers/plassembler:1.8.2--pyhdfd78af_0 |
+
+## Databases
+
+The following tools require databases:
+
+| Tool | Database Location | Notes |
+| ---- | ----------------- | ----- |
+| Kraken2 | //cvmfs/data.galaxyproject.org/managed/kraken2_databases/kalamari | Kalamari database is curated and only 2GB in size, which is suitable for the workshop, while the standard Kraken2 database is ~60GB in size and can't fit into memory on the VMs. |
+| Plassembler | N/A | Download with `plassembler download -d <db directory>`. Size is 437MB, can be pre-loaded on the VMs. |
