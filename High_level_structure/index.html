@@ -1,0 +1,534 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>High-level workshop structure - template-mkdocs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-TNWWV3HK57"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-TNWWV3HK57",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-TNWWV3HK57",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#high-level-workshop-structure" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="template-mkdocs" class="md-header__button md-logo" aria-label="template-mkdocs" data-md-component="logo">
+      
+  <img src="../assets/usyd-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            template-mkdocs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              High-level workshop structure
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/Sydney-Informatics-Hub/template-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Sydney-Informatics-Hub/template-mkdocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="template-mkdocs" class="md-nav__button md-logo" aria-label="template-mkdocs" data-md-component="logo">
+      
+  <img src="../assets/usyd-logo.png" alt="logo">
+
+    </a>
+    template-mkdocs
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/Sydney-Informatics-Hub/template-mkdocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Sydney-Informatics-Hub/template-mkdocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="high-level-workshop-structure">High-level workshop structure</h1>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Lesson name</th>
+<th>Lesson description</th>
+<th>Tools</th>
+<th>Learning objectives</th>
+<th>Estimated time (min)</th>
+<th>Who</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Day 1</td>
+<td>Introduction and platform overview</td>
+<td>Describe why long reads are used, introduce long-read versus short-read sequencing and ONT with PacBio context.</td>
+<td>None</td>
+<td>- Explain key differences between long- and short-read approaches.<br>- Describe core workflow stages.</td>
+<td>30</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 1</td>
+<td>Read quality control</td>
+<td>Describe key ONT quality metrics and expected thresholds for bacterial assembly, introduce NanoPlot and MultiQC outputs, and learn how to decide whether sequencing data is suitable to proceed.</td>
+<td>NanoPlot; MultiQC</td>
+<td>- Run NanoPlot and interpret read quality profiles.<br>- Aggregate reports with MultiQC.<br>- Decide if data quality is sufficient to continue.</td>
+<td>60</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 1</td>
+<td>Sequencing run QC</td>
+<td>Describe run-level sequencing performance metrics, use NanoPlot for analysing pore activity and channel occupancy over time, and learn how to diagnose run performance issues.</td>
+<td>NanoPlot</td>
+<td>- Generate run-level summaries.<br>- Interpret plots to diagnose sequencing run performance issues.</td>
+<td>20</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 1</td>
+<td>Pre-processing</td>
+<td>Describe why adapter clipping and read filtering are required, introduce Pychopper and fastplong, and learn how to balance filtering stringency with sufficient data retention for assembly.</td>
+<td>Pychopper; fastplong</td>
+<td>- Remove adapters.<br>- Filter low-quality and low-complexity reads.<br>- Compare pre/post-QC to evaluate preprocessing impact.</td>
+<td>60</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 1</td>
+<td>Contamination assessment and host read removal</td>
+<td>Describe common contamination sources and host-read implications, introduce Kraken2, Krona, and Minimap2 with Kalamari versus standard database context, and learn how to identify and remove host-associated reads.</td>
+<td>Kraken2; Krona; Minimap2</td>
+<td>- Detect host signal with Kraken2 (Kalamari).<br>- Visualise contamination with Krona.<br>- Align to host reference and extract non-host reads.</td>
+<td>90</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 1/2</td>
+<td>Genome assembly</td>
+<td>Describe de novo long-read assembly principles and expected outputs, introduce Flye and one of alternative assemblers (Raven, Canu, or Miniasm), and learn how to compare assembly products such as contigs, graphs, and run summaries.</td>
+<td>Flye; (Raven; Canu; Miniasm)</td>
+<td>- Assemble ONT reads with Flye and a second assembler.<br>- Inspect contig FASTA, assembly graphs, logs, and summary statistics.</td>
+<td>90</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 2</td>
+<td>Plasmid assembly and annotation</td>
+<td>Describe plasmid recovery and annotation challenges, introduce Plassembler and Bakta for plasmid-focused analysis, and learn how to interpret replication, mobility, and resistance-related plasmid features.</td>
+<td>Plassembler; Bakta</td>
+<td>- Recover plasmids from ONT reads with Plassembler.<br>- Annotate plasmids with Bakta.<br>- Interpret plasmid feature outputs.</td>
+<td>60</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 2</td>
+<td>Consensus assembly</td>
+<td>Describe the role of consensus generation in improving assemblies, introduce Autocycler for evaluating candidate assemblies, and learn how to identify and produce circularised consensus outputs where appropriate.</td>
+<td>Autocycler</td>
+<td>- Use Autocycler to assess assembly sets.<br>- Produce consensus/circularised assemblies where supported.</td>
+<td>30</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 2</td>
+<td>Assembly quality assessment and visualisation</td>
+<td>Describe assembly quality dimensions including contiguity, correctness, and completeness, introduce QUAST, BUSCO, and MultiQC, and learn how to evaluate assemblies with and without a reference.</td>
+<td>QUAST; BUSCO; MultiQC</td>
+<td>- Assess assemblies with QUAST (with/without reference).<br>- Assess completeness with BUSCO.<br>- Combine per-sample metrics with MultiQC for comparison.</td>
+<td>90</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>If time left</td>
+<td>Assembly graph visualisation</td>
+<td>Describe assembly graph topology concepts, introduce Bandage for graph inspection, and learn how to interpret circular structures, repeats, and fragmented connectivity patterns.</td>
+<td>Bandage</td>
+<td>- Load and inspect assembly graphs in Bandage.<br>- Identify circular contigs, repeats, and graph connectivity patterns.</td>
+<td>20</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>Day 2</td>
+<td>Assembly polishing</td>
+<td>Describe common systematic errors in ONT assemblies, introduce Medaka-based polishing strategy, and learn how iterative polishing affects consensus accuracy and diminishing returns.</td>
+<td>Medaka</td>
+<td>- Align reads back to draft assemblies.<br>- Run Medaka polishing.<br>- Compare accuracy before and after polishing.</td>
+<td>60</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>If time left</td>
+<td>Gene annotation and AMR screening</td>
+<td>Describe prokaryotic gene annotation and AMR screening principles, introduce Bakta, AMRFinderPlus, and ABRicate database workflows, and learn how to interpret AMR and virulence findings across tools.</td>
+<td>Bakta; AMRFinderPlus; ABRicate</td>
+<td>- Annotate genomes with Bakta.<br>- Detect AMR genes/mutations with AMRFinderPlus.<br>- Screen databases with ABRicate.<br>- Compare tool outputs.</td>
+<td>120</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>If time left</td>
+<td>Comparative genomics</td>
+<td>Describe pan-genome analysis concepts including core and accessory gene content, introduce OrthoFinder for orthologous gene analysis, and learn how comparative genomics supports bacterial epidemiology questions.</td>
+<td>OrthoFinder</td>
+<td>- Run OrthoFinder on multiple annotated proteomes.<br>- Interpret orthogroups.<br>- Distinguish core versus accessory gene content.</td>
+<td>90</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>If time left</td>
+<td>Allele-based identification and variant calling</td>
+<td>Describe long-read variant-calling challenges and filtering principles, introduce Clair3, SnpSift Filter, and bcftools consensus, and learn how to generate high-confidence variants and consensus genomes.</td>
+<td>Clair3; SnpSift Filter; bcftools consensus</td>
+<td>- Prepare alignments for variant calling.<br>- Call variants with Clair3.<br>- Filter high-confidence variants.<br>- Build consensus genomes.</td>
+<td>120</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>If time left</td>
+<td>Multi-sample comparison and phylogenetics</td>
+<td>Describe multiple sequence alignment and phylogenetic inference fundamentals, introduce ClustalW, FastTree, and Newick Display, and learn how to interpret tree topology for sample relatedness.</td>
+<td>ClustalW; FastTree; Newick Display</td>
+<td>- Generate multi-sample alignments.<br>- Build phylogenetic trees.<br>- Visualise and interpret tree topology for genomic relatedness.</td>
+<td>90</td>
+<td>TBD</td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.footer", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+    
+  </body>
+</html>
