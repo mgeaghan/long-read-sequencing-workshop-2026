@@ -13,3 +13,9 @@ All of the data for this study was made publicly available on the [NCBI BioProje
 | SRR11909881 | K. pneumoniae | 3 | A, B | Yes | Yes |
 | SRR11909879 | C. freundii | 4 | A | Yes | No |
 | SRR11909877 | E. coli | 5 | B | Yes | Yes |
+
+## Subsetting data
+
+The raw FASTQs from the original study are large (~2GB and ~200k reads). For the workshop, we will try to use a subset of reads to achieve a similar results.
+
+Initial tests with SRR11909877 show that subsetting the FASTQ file to ~10% of the original reads still allows for assembly and circularisation of the main chromosome (~4Mb) and the AMR-containing plasmid (~43kb).
